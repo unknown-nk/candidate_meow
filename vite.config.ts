@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'node:path';
 
+
 const rootPath = resolve(process.cwd())
 const srcPath = resolve(__dirname, 'src')
 
@@ -13,7 +14,7 @@ export default defineConfig({
         alias: {
             '~': rootPath,
             '@': srcPath,
-            '/images': 'src/assets/images',
+            '/images': 'src/assets',
         },
     },
 })
