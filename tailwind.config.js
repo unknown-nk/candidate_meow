@@ -21,6 +21,9 @@ export default {
       fontFamily: {
         jost: ['Jost'],
       },
+      boxShadow: {
+        main: '0 4px 6px -15px rgba(0, 0, 0, 0.8)',
+      },
     },
   },
   plugins: [],
