@@ -1,7 +1,7 @@
 <template>
   <!-- 最新活動 -->
   <div class="h-[80vh] flex justify-center bg-[url('/src/assets/img/bg.png')] bg-center bg-no-repeat">
-    <div class="w-[1420px] flex flex-col items-start justify-center">
+    <div class="w-[1420px] flex flex-col items-start justify-center relative">
       <div class="mb-[76px]">
         <span class="font-jost text-primary text-[30px]">Last Activity</span>
         <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em]">最新活動</p>
@@ -14,8 +14,8 @@
             :spaceBetween="40"
             :loop="true"
             :pagination="{
+              el: '.swiper-pagination',
               clickable: true,
-              type: 'custom',
             }"
             :modules="modules"
             class="mySwiper"
@@ -170,10 +170,9 @@ const onSwiper = (swiper: any) => {
   console.log(swiper)
 }
 const onSlideChange = (e: any) => {
-  // swiper切换的时候执行的方法
   console.log('slide change', e.activeIndex)
 }
-// setup语法糖只需要这样创建一个变量就可以正常使用分页器和对应功能，如果没有这个数组则无法使用对应功能
+
 const modules = [Pagination, A11y]
 </script>
 <style lang="scss" scoped>
@@ -183,26 +182,22 @@ const modules = [Pagination, A11y]
 
 .swiper-pagination {
   position: absolute !important;
-  top: 10px;
-  right: 10px;
-  width: auto !important;
-  left: auto !important;
+  bottom: 10%;
+  left: 0;
+  width: 100% !important;
+  height: 20px;
   margin: 0;
-}
-.swiper-pagination-bullet {
-  padding: 5px 10px;
-  border-radius: 0;
-  width: auto;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  font-size: 12px;
-  color: #000;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
-}
-.swiper-pagination-bullet-active {
-  color: #fff;
-  background: #ea7f1b !important;
+  z-index: 50;
+  --swiper-theme-color: #ea7f1b !important;
+  --swiper-pagination-bullet-width: 50px;
+  --swiper-pagination-bullet-height: 1px;
+  --swiper-pagination-bullet-border-radius: 0%;
+  --swiper-pagination-bullet-horizontal-gap: 0;
+
+  .swiper-pagination-bullet {
+  }
+  .swiper-pagination-bullet-active {
+    height: 3px !important;
+  }
 }
 </style>
