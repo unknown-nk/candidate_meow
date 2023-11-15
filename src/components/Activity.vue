@@ -1,6 +1,6 @@
 <template>
   <!-- 最新活動 -->
-  <div class="h-[80vh] flex justify-center bg-[url('/src/assets/img/bg.png')] bg-center bg-no-repeat">
+  <div class="h-screen flex justify-center bg-[url('/src/assets/img/bg.png')] bg-center bg-no-repeat">
     <div class="w-[1420px] flex flex-col items-start justify-center relative">
       <div class="mb-[76px]">
         <span class="font-jost text-primary text-[30px]">Last Activity</span>
@@ -92,19 +92,16 @@
                 <div
                   class="w-[578px] h-[325px] rounded-lg bg-slate-600 overflow-hidden flex justify-center items-center mb-[38px]"
                 >
-                  <img src="/images/img/activity/activity1.png" alt="" />
+                  <img src="/images/img/activity/activity4.jpg" alt="" />
                 </div>
                 <span class="text-primary flex items-center mb-[46px] font-jost">
                   <p class="text-[50px] font-medium mr-4">2023</p>
-                  <p class="text-[30px] tracking-[.06em] mr-4">12/26</p>
+                  <p class="text-[30px] tracking-[.06em] mr-4">12/18</p>
                   <span class="w-full h-[1px] border-b border-line-color"></span>
                 </span>
                 <div>
-                  <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">參與台北寵物論壇，爭取貓咪友善環境</p>
-                  <p class="tracking-[.24em]">
-                    炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的
-                    VIP 休憩空間。
-                  </p>
+                  <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">愛貓族必看 - 貓咪身分證制度</p>
+                  <p class="tracking-[.24em]">未來飼主需為愛貓辦理身分證，方便管理、追蹤，讓貓咪都有家歸。</p>
                 </div>
               </div></swiper-slide
             >
@@ -114,19 +111,16 @@
                 <div
                   class="w-[578px] h-[325px] rounded-lg bg-slate-600 overflow-hidden flex justify-center items-center mb-[38px]"
                 >
-                  <img src="/images/img/activity/activity1.png" alt="" />
+                  <img src="/images/img/activity/activity5.jpg" alt="" />
                 </div>
                 <span class="text-primary flex items-center mb-[46px] font-jost">
                   <p class="text-[50px] font-medium mr-4">2023</p>
-                  <p class="text-[30px] tracking-[.06em] mr-4">12/26</p>
+                  <p class="text-[30px] tracking-[.06em] mr-4">12/15</p>
                   <span class="w-full h-[1px] border-b border-line-color"></span>
                 </span>
                 <div>
-                  <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">參與台北寵物論壇，爭取貓咪友善環境</p>
-                  <p class="tracking-[.24em]">
-                    炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的
-                    VIP 休憩空間。
-                  </p>
+                  <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">全城採貓絕育！你加入了嗎？</p>
+                  <p class="tracking-[.24em]">鼓勵飼主支持貓咪絕育，減少無家可歸的貓咪，共同守護社區和諧。</p>
                 </div>
               </div></swiper-slide
             >
@@ -136,19 +130,16 @@
                 <div
                   class="w-[578px] h-[325px] rounded-lg bg-slate-600 overflow-hidden flex justify-center items-center mb-[38px]"
                 >
-                  <img src="/images/img/activity/activity1.png" alt="" />
+                  <img src="/images/img/activity/activity6.jpg" alt="" />
                 </div>
                 <span class="text-primary flex items-center mb-[46px] font-jost">
                   <p class="text-[50px] font-medium mr-4">2023</p>
-                  <p class="text-[30px] tracking-[.06em] mr-4">12/26</p>
+                  <p class="text-[30px] tracking-[.06em] mr-4">12/10</p>
                   <span class="w-full h-[1px] border-b border-line-color"></span>
                 </span>
                 <div>
-                  <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">參與台北寵物論壇，爭取貓咪友善環境</p>
-                  <p class="tracking-[.24em]">
-                    炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的
-                    VIP 休憩空間。
-                  </p>
+                  <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">貓咪有權利！新法保障毛小孩福祉</p>
+                  <p class="tracking-[.24em]">制定法令保護貓咪權益，防止虐待，讓每隻貓都能擁有幸福的生活。</p>
                 </div>
               </div></swiper-slide
             >

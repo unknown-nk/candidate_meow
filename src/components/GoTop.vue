@@ -1,6 +1,6 @@
 <template>
   <!-- 回到上方 -->
-  <button @click="scrollToTop" class="fixed right-24 bottom-8 rounded-full shadow-2xl">
+  <button @click="scrollToTop" class="fixed right-24 bottom-8 rounded-full shadow-2xl z-50">
     <img src="/images/img/go-top.svg" alt="Go Top" />
   </button>
 </template>

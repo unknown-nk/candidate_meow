@@ -1,4 +1,5 @@
 <template>
+  <DonateContent v-if="isComponentOpen" @isComponentOpen="handleIsComponentOpen" />
   <!-- 捐款 -->
   <div class="h-[80vh] flex flex-col justify-center items-center">
     <div class="text-center mb-12">
@@ -13,7 +14,7 @@
 
     <div class="w-[1920px] h-[734px] relative">
       <div
-        class="absolute z-40 swiper-button-prev w-20 h-20 bg-white rounded-full flex justify-center items-center top-1/2 -translate-y-1/2 left-[60px]"
+        class="absolute z-40 swiper-button-prev w-20 h-20 bg-white rounded-full flex justify-center items-center shadow-xl top-1/2 -translate-y-1/2 left-[60px]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,7 @@
         </svg>
       </div>
       <div
-        class="absolute z-40 swiper-button-next w-20 h-20 bg-white rounded-full flex justify-center items-center top-1/2 -translate-y-1/2 right-[60px]"
+        class="absolute z-40 swiper-button-next w-20 h-20 bg-white rounded-full flex justify-center items-center shadow-xl top-1/2 -translate-y-1/2 right-[60px]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +70,7 @@
                 </p>
                 <p class="text-text-color tracking-[.06em] mb-9">已有 9,957 人贊助</p>
                 <button
+                  @click="openComponent"
                   class="w-full h-[60px] bg-primary hover:bg-primary-hover text-white py-2 px-4 rounded tracking-[.24em]"
                 >
                   前往捐款
@@ -132,20 +134,27 @@
   </div>
 </template>
 <script setup lang="ts">
+import { ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-
 import { Navigation, A11y } from 'swiper/modules'
-
 import 'swiper/scss'
 import 'swiper/scss/pagination'
+import DonateContent from '../components/DonateContent.vue'
+
 const onSwiper = (swiper: any) => {
   console.log(swiper)
 }
 const onSlideChange = (e: any) => {
   console.log('slide change', e.activeIndex)
 }
-
 const modules = [Navigation, A11y]
+const isComponentOpen = ref(false)
+const openComponent = () => {
+  isComponentOpen.value = !isComponentOpen.value
+}
+const handleIsComponentOpen = (value: any) => {
+  isComponentOpen.value = value
+}
 </script>
 <style lang="scss" scoped>
 .swiper-button-prev {
