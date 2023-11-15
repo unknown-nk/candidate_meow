@@ -1,6 +1,6 @@
 <template>
   <!-- 最新活動 -->
-  <div class="h-screen flex justify-center bg-[url('/src/assets/img/bg.png')] bg-center bg-no-repeat">
+  <div class="h-[1294px] flex justify-center bg-[url('/src/assets/img/bg.png')] bg-center bg-no-repeat">
     <div class="w-[1420px] flex flex-col items-start justify-center relative">
       <div class="mb-[76px]">
         <span class="font-jost text-primary text-[30px]">Last Activity</span>

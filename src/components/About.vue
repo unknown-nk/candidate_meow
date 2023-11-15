@@ -1,6 +1,6 @@
 <template>
   <!-- 關於我 -->
-  <div class="h-[80vh] flex justify-center">
+  <div class="h-[996px] flex justify-center">
     <div class="w-[1420px] grid grid-cols-2 content-center justify-center">
       <div class="grow">
         <span class="font-jost text-primary text-[30px]">About me</span>

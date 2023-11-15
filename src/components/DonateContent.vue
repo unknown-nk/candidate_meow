@@ -10,12 +10,12 @@
       </button>
 
       <div class="w-[818px] h-[776px]">
-        <img src="/images/img/donate/donateImg1.png" alt="" class="w-full" />
+        <img :src="propsItem.chooseItem.subImgUrl" alt="" class="w-full" />
       </div>
       <div class="w-[602px] pl-[60px] pr-11">
         <div class="flex items-center mb-5">
-          <p class="text-[30px] tracking-[.24em] font-bold mr-4">喵星人之友</p>
-          <span class="tracking-[.06em]">已有 9,957 人贊助</span>
+          <p class="text-[30px] tracking-[.24em] font-bold mr-4">{{ propsItem.chooseItem.title }}</p>
+          <span class="tracking-[.06em]">已有 {{ formatThousandth(propsItem.chooseItem.people) }} 人贊助</span>
         </div>
         <p class="tracking-[.24em] leading-[30px] mb-[100px]">
           眾所皆知貓是外星人派來統治地球的。但牠們發現，只要一直喵喵叫，就能吃到很多好吃的，所以牠們決定要收人類為僕。除了飲食外，玩樂也是相當重要，要時刻注意主子的運動量，才能活得長長久久喔
@@ -29,7 +29,9 @@
             >
               -$100
             </button>
-            <span class="font-jost text-primary text-[30px] font-bold tracking-[.06em]">NT$ {{ amount }}</span>
+            <span class="font-jost text-primary text-[30px] font-bold tracking-[.06em]"
+              >NT$ {{ formatThousandth(amount) }}</span
+            >
             <button
               @click="amountPlus"
               class="h-[60px] border border-line-color bg-transparent hover:bg-line-color py-[15px] px-[50px] rounded tracking-[.06em]"
@@ -113,18 +115,23 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref, defineProps, defineEmits } from 'vue'
+import { ref } from 'vue'
 /** 1: 主捐款畫面
  *  2: 已成功捐款
  *  3: 捐款聲明 */
 const donateView = ref(1)
-const amount = ref(600)
+const propsItem = defineProps(['chooseItem'])
+const amount = ref(propsItem.chooseItem.amount)
 const isChecked = ref(false)
+
 const emitsComponentOpen = defineEmits(['isComponentOpen'])
+
+const formatThousandth = (value: number) => {
+  return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
 
 const amountPlus = () => {
   amount.value += 100
-  console.log(amount.value)
 }
 
 const amountMinus = () => {

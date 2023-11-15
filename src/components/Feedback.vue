@@ -13,7 +13,8 @@
         </div>
       </div>
 
-      <div class="bg-primary bg-opacity-10 rounded-lg shadow-xl">
+      <div class="h-[819px] bg-primary bg-opacity-10 rounded-lg shadow-xl relative">
+        <img src="/images/img/feedback-fish.svg" alt="" class="absolute -right-[66px] -bottom-[130px]" />
         <div class="flex justify-center my-20 mx-[60px]">
           <form class="w-full">
             <label class="block mb-8">
@@ -61,17 +62,9 @@
             <button
               class="mt-2 w-full h-[60px] bg-primary hover:bg-primary-hover text-white py-2 px-4 rounded tracking-[.24em]"
             >
-              前往捐款
+              送出
             </button>
           </form>
-
-          <!-- <div class="flex flex-col">
-            <span>姓名</span>
-            <input type="text" />
-          </div>
-          <div><span>Email</span> <input type="text" /></div>
-          <div><span>手機</span> <input type="text" /></div>
-          <div><span>建言</span> <input type="text" /></div> -->
         </div>
       </div>
     </div>
