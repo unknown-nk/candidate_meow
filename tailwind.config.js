@@ -24,6 +24,20 @@ export default {
       boxShadow: {
         main: '0 4px 6px -15px rgba(0, 0, 0, 0.8)',
       },
+      screens: {
+        mobile: '375px',
+        pad: '1140px',
+        mid: '1280px',
+        desktop: '1420px',
+        max: '1920px',
+      },
+      width: {
+        mobile: '375px',
+        pad: '1140px',
+        mid: '1280px',
+        desktop: '1420px',
+        max: '1920px',
+      },
     },
   },
   plugins: [],

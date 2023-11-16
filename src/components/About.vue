@@ -1,7 +1,7 @@
 <template>
   <!-- 關於我 -->
   <div class="h-[996px] flex justify-center">
-    <div class="w-[1420px] grid grid-cols-2 content-center justify-center">
+    <div class="w-pad desktop:w-mid max:w-desktop grid grid-cols-2 content-center justify-center">
       <div class="grow">
         <span class="font-jost text-primary text-[30px]">About me</span>
         <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em]">

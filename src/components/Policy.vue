@@ -1,15 +1,16 @@
 <template>
   <!-- 政策議題 -->
   <div class="h-[80vh] flex justify-center">
-    <div class="w-[1420px] flex flex-col items-start justify-center relative">
-      <div class="mb-[60px]">
+    <div class="w-pad desktop:w-mid max:w-desktop flex flex-col items-start justify-center relative">
+      <div class="mb-[60px] ">
         <span class="font-jost text-primary text-[30px]">Policy</span>
         <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em]">政策議題</p>
       </div>
       
       <div class="w-full h-[558px] flex relative">
         <div class="swiper-pagination-policy"></div>
-        <div class="w-full h-[558px] relative">
+        <div class="w-full h-[558px]  rounded-lg overflow-hidden  relative">
+        <div class='w-full h-full bg-primary bg-opacity-10 ml-[94px] rounded-lg absolute -z-10'></div>
           <swiper
             :direction="'vertical'"
             :slidesPerView="1"
@@ -26,14 +27,14 @@
                 <div class='h-full flex items-center'>
               <div class="flex justify-start items-center">
                 <div
-                  class="w-[661px] h-[393px] rounded-lg bg-slate-600 overflow-hidden flex justify-center items-center mr-[60px]"
+                  class="w-[661px] h-auto max:h-[393px] rounded-lg bg-slate-600 overflow-hidden flex justify-center items-center mr-[60px]"
                 >
                   <img src="/images/img/policy/policy1.png" alt="" />
                 </div>
 
-                <div class='w-[578px] pl-10'>
+                <div class='w-[50%] max:w-[578px] mr-16 max:mr-2'>
                   <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">為毛孩子謀福利！推動寵物醫療保障方案</p>
-                  <p class="tracking-[.24em]">
+                  <p class="tracking-[.24em] pl-10">
                     <ol class='list-decimal	'>
                         <li>街上氣氛真設立寵物醫療基金：每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用。</li>
                         <li>提供醫療補助：每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力。</li>
@@ -51,14 +52,14 @@
                 <div class='h-full flex items-center'>
                 <div class="flex justify-around items-center">
                 <div
-                  class="w-[661px] h-[393px] rounded-lg bg-slate-600 overflow-hidden flex justify-center items-center mr-[60px]"
+                  class="w-[661px] h-auto max:h-[393px] rounded-lg bg-slate-600 overflow-hidden flex justify-center items-center mr-[60px]"
                 >
                   <img src="/images/img/policy/policy2.png" alt="" />
                 </div>
 
-                <div class='w-[578px] pl-10'>
+                <div class='w-[50%] max:w-[578px] mr-16 max:mr-2'>
                   <p class="text-[30px] font-bold mb-[18px] tracking-[.24em]">打造休閒天堂！推廣寵物休閒與娛樂場所</p>
-                  <p class="tracking-[.24em]">
+                  <p class="tracking-[.24em] pl-10">
                     <ol class='list-decimal	'>
                         <li>建立寵物公園：每年撥款新台幣 5 億元，用於在各大都市建立專屬的寵物公園。根據初步規劃，預計在第一年內，將在全國範圍內建立至少 10 座寵物公園。</li>
                         <li>推廣寵物友善商家：鼓勵商家提供寵物友善的環境，並為參與的商家提供稅收優惠。預計在政策實施後的首年，將有超過 500 家商家加入此計畫。</li>
@@ -71,8 +72,6 @@
             </div>
             </swiper-slide>
           </swiper>
-          
-          <div class="w-full h-full bg-primary opacity-10 ml-[94px] rounded-lg -z-10 absolute top-0"></div>
         </div>
       
       </div>
@@ -104,7 +103,7 @@ const modules = [Mousewheel, Pagination]
     width: auto !important;
   height: auto !important;
     position: absolute !important;
-    right: 0 !important;
+    right: 45px !important;
     top: 50% !important;
   margin: 0;
   z-index: 50;

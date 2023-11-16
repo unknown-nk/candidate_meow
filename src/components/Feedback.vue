@@ -1,7 +1,7 @@
 <template>
   <!-- 回饋 -->
   <div class="h-screen flex justify-center">
-    <div class="w-[1420px] grid grid-cols-2 content-center justify-center items-center">
+    <div class="w-pad desktop:w-mid max:w-desktop grid grid-cols-2 content-center justify-center items-center">
       <div class="grow">
         <span class="font-jost text-primary text-[30px]">Feedback</span>
         <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em]">民眾服務信箱</p>
@@ -33,9 +33,6 @@
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
                 placeholder="請輸入"
               />
-              <!-- <p class="mt-2 opacity-10 contrast-more:opacity-100 text-slate-600 text-sm">
-                We need this to steal your identity.
-              </p> -->
             </label>
             <label class="block mb-8">
               <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">手機</span>
@@ -43,9 +40,6 @@
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
                 placeholder="請輸入"
               />
-              <!-- <p class="mt-2 opacity-10 contrast-more:opacity-100 text-slate-600 text-sm">
-                We need this to steal your identity.
-              </p> -->
             </label>
             <label class="block mb-8">
               <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">建言</span>
@@ -54,10 +48,6 @@
                 maxlength="300"
                 placeholder="請輸入"
               ></textarea>
-
-              <!-- <p class="mt-2 opacity-10 contrast-more:opacity-100 text-slate-600 text-sm">
-                We need this to steal your identity.
-              </p> -->
             </label>
             <button
               class="mt-2 w-full h-[60px] bg-primary hover:bg-primary-hover text-white py-2 px-4 rounded tracking-[.24em]"

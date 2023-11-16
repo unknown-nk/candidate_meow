@@ -61,7 +61,7 @@
           <div class="h-full">
             <div class="w-full h-full relative">
               <div
-                class="absolute right-[250px] bottom-[45px] w-[452px] h-[322px] bg-white rounded-lg z-30 px-[50px] py-[30px] bg-opacity-70"
+                class="absolute right-[400px] desktop:right-[250px] bottom-[45px] w-[452px] h-[322px] bg-white rounded-lg z-30 px-[50px] py-[30px] bg-opacity-70"
               >
                 <p class="text-[40px] text-sub-primary font-extrabold tracking-[.26em] mb-[18px]">{{ item.title }}</p>
                 <p class="flex items-center mb-1">

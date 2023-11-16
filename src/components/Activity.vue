@@ -1,13 +1,13 @@
 <template>
   <!-- 最新活動 -->
   <div class="h-[1294px] flex justify-center bg-[url('/src/assets/img/bg.png')] bg-center bg-no-repeat">
-    <div class="w-[1420px] flex flex-col items-start justify-center relative">
+    <div class="w-pad desktop:w-mid max:w-desktop flex flex-col items-start justify-center relative">
       <div class="mb-[76px]">
         <span class="font-jost text-primary text-[30px]">Last Activity</span>
         <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em]">最新活動</p>
       </div>
-      <div class="w-[1670px] overflow-hidden">
-        <div class="w-[1920px]">
+      <div class="w-screen max:w-[1670px] h-auto overflow-hidden">
+        <div class="w-full overflow-hidden">
           <swiper
             :slidesPerView="'auto'"
             :slidesPerGroup="2"
@@ -18,7 +18,7 @@
               clickable: true,
             }"
             :modules="modules"
-            class="mySwiper"
+            class="mySwiper w-full overflow-hidden"
           >
             <!-- 1 -->
             <swiper-slide>
