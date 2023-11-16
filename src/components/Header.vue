@@ -16,7 +16,7 @@
       <!-- 手機選單 -->
       <div class="h-full pad:hidden absolute left-8 z-40 flex items-center">
         <!-- bar -->
-        <div class="cursor-pointer absolute" :class="{ 'hidden-bar': !showBar }" @click="barSwitch">
+        <div class="cursor-pointer absolute" :class="{ 'hidden-bar': showBar }" @click="barSwitch">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -29,7 +29,7 @@
           </svg>
         </div>
         <!-- close -->
-        <div class="cursor-pointer absolute" :class="{ 'hidden-bar': showBar }" @click="barSwitch">
+        <div class="cursor-pointer absolute" :class="{ 'hidden-bar': !showBar }" @click="barSwitch">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -44,7 +44,7 @@
       </div>
       <div
         class="w-full h-screen z-30 bg-white absolute top-0 left-0 opacity-0 transition-opacity duration-300 ease-in-out pad:hidden"
-        :class="{ 'opacity-100': !showBar }"
+        :class="{ 'opacity-100': showBar }"
       >
         <div
           class="w-full absolute top-40 flex flex-col justify-center items-center font-jost font-bold text-lg text-sub-primary z-50 px-8"
