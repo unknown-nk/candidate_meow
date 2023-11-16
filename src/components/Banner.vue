@@ -9,7 +9,7 @@
           台灣的明天，<br />喵先鋪路
         </p>
       </div>
-      <div class="w-full h-full relative -z-50 flex justify-center">
+      <div class="w-full h-full relative -z-40 flex justify-center">
         <img src="/images/img/banner.png" alt="" class="hidden pad:block" />
         <img src="/images/img/banner/mobile-banner.png" alt="" class="block pad:hidden" />
 

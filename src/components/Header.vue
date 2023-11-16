@@ -43,11 +43,11 @@
         </div>
       </div>
       <div
-        class="w-full h-screen z-30 bg-white absolute top-0 left-0 opacity-0 transition-opacity duration-300 ease-in-out pad:hidden"
-        :class="{ 'opacity-100': showBar }"
+        class="w-full h-screen bg-white absolute z-30 top-0 left-0 opacity-0 transition-opacity duration-300 ease-in-out pad:hidden"
+        :class="{ 'opacity-100': showBar, 'h-0 overflow-hidden': !showBar }"
       >
         <div
-          class="w-full absolute top-40 flex flex-col justify-center items-center font-jost font-bold text-lg text-sub-primary z-50 px-8"
+          class="w-full absolute z-50 top-40 flex flex-col justify-center items-center font-jost font-bold text-lg text-sub-primary px-8"
         >
           <div class="mb-[54px]"><a href="" class="hover:text-sub-primary-hover">About Me</a></div>
           <div class="mb-[54px]"><a href="" class="hover:text-sub-primary-hover">Last Activity</a></div>
