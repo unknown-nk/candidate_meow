@@ -1,11 +1,11 @@
 <template>
   <!-- Footer -->
-  <div class="flex justify-center border-t-2 border-primary">
-    <div class="w-[1420px] h-[420px] grid grid-cols-3 justify-center content-center">
-      <div>
-        <span class="font-jost text-sub-primary font-bold text-[18px] mb-10 block">Information</span>
-        <div class="">
-          <p class="mb-8 tracking-[0.24em] flex justify-start items-center">
+  <div class="flex justify-center border-t-2 border-primary pt-[20px] pad:pt-0">
+    <div class="w-[1420px] h-[420px] pad:grid grid-cols-3 justify-center content-center flex flex-col items-center">
+      <div class="mb-[60px] pad:mb-0">
+        <span class="font-jost text-sub-primary font-bold text-[18px] mb-10 hidden pad:block">Information</span>
+        <div>
+          <p class="mb-8 tracking-[0.24em] flex justify-center pad:justify-start items-center">
             <i
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@
               </svg> </i
             >喵星區，毛茸茸大道88號，喵喵大樓3樓
           </p>
-          <p class="mb-8 flex justify-start items-center">
+          <p class="mb-8 flex justify-center pad:justify-start items-center">
             <i
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@
               </svg> </i
             >(02) 888-5678
           </p>
-          <p class="flex justify-start items-center">
+          <p class="flex justify-center pad:justify-start items-center">
             <i
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="hidden pad:block">
         <span class="font-jost text-sub-primary font-bold text-[18px] mb-10 block">Links</span>
         <div class="grid grid-rows-4 grid-flow-col gap-4 text-primary font-jost">
           <a href="" class="hover:text-primary-hover">About me</a>
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div>
-        <span class="font-jost text-sub-primary font-bold text-[18px] mb-10 block">Follow us</span>
+        <span class="font-jost text-sub-primary font-bold text-[18px] mb-10 hidden pad:block">Follow us</span>
         <div class="grid grid-rows-3">
           <div class="row-span-2 flex">
             <div
@@ -95,7 +95,7 @@
             </div>
           </div>
         </div>
-        <p class="h-full align-bottom block">版權聲明：© 2023喵立翰 版權所有</p>
+        <p class="h-full align-bottom block text-center pad:text-start">版權聲明：© 2023喵立翰 版權所有</p>
       </div>
     </div>
   </div>
