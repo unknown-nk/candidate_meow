@@ -5,7 +5,7 @@
       <div class="mb-[60px] pad:mb-0">
         <span class="font-jost text-sub-primary font-bold text-[18px] mb-10 hidden pad:block">Information</span>
         <div>
-          <p class="mb-8 tracking-[0.24em] flex justify-center pad:justify-start items-center">
+          <p class="mb-8 tracking-[0.06em] pad:tracking-[0.24em] flex justify-center pad:justify-start items-center">
             <i
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,9 @@
             </div>
           </div>
         </div>
-        <p class="h-full align-bottom block text-center pad:text-start">版權聲明：© 2023喵立翰 版權所有</p>
+        <p class="h-full align-bottom block text-center pad:text-start tracking-[0.18em] pad:tracking-normal">
+          版權聲明：© 2023喵立翰 版權所有
+        </p>
       </div>
     </div>
   </div>

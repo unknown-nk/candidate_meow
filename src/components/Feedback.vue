@@ -1,23 +1,31 @@
 <template>
   <!-- 回饋 -->
-  <div class="h-screen flex justify-center">
-    <div class="w-pad desktop:w-mid max:w-desktop grid grid-cols-2 content-center justify-center items-center">
-      <div class="grow">
+  <div class="h-[1282px] flex justify-center">
+    <div
+      class="w-pad desktop:w-mid max:w-desktop flex flex-col pad:grid grid-cols-2 content-center justify-center items-center mx-8 pad:mx-0"
+    >
+      <div class="pad:grow text-center pad:text-start">
         <span class="font-jost text-primary text-[30px]">Feedback</span>
-        <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em]">民眾服務信箱</p>
-        <div class="mt-20 tracking-[.24em] leading-[30px] pr-[170px]">
-          <p class="text-[30px] font-bold mb-[18px]">您的聲音，我們的行動！</p>
+        <p class="text-[30px] mobile:text-[50px] pad:text-[80px] text-sub-primary font-extrabold tracking-[.28em]">
+          民眾服務信箱
+        </p>
+        <div class="pad:mt-20 tracking-[.24em] leading-[30px] pad:pr-[170px] my-8 pad:my-0">
+          <p class="text-[18px] pad:text-[30px] font-bold mb-[18px]">您的聲音，我們的行動！</p>
           <p>
             親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！
           </p>
         </div>
       </div>
 
-      <div class="h-[819px] bg-primary bg-opacity-10 rounded-lg shadow-xl relative">
-        <img src="/images/img/feedback-fish.svg" alt="" class="absolute -right-[66px] -bottom-[130px]" />
-        <div class="flex justify-center my-20 mx-[60px]">
+      <div class="h-[643px] w-full pad:h-[819px] bg-primary bg-opacity-10 rounded-lg shadow-xl relative">
+        <img
+          src="/images/img/feedback-fish.svg"
+          alt=""
+          class="h-[94px] pad:h-auto absolute right-0 -bottom-[80px] pad:-right-[66px] pad:-bottom-[130px]"
+        />
+        <div class="flex justify-center my-8 pad:my-20 mx-5 pad:mx-[60px]">
           <form class="w-full">
-            <label class="block mb-8">
+            <label class="block mb-4 pad:mb-8">
               <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">姓名</span>
               <input
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
@@ -27,21 +35,21 @@
                 We need this to steal your identity.
               </p> -->
             </label>
-            <label class="block mb-8">
+            <label class="block mb-4 pad:mb-8">
               <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">Email</span>
               <input
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
                 placeholder="請輸入"
               />
             </label>
-            <label class="block mb-8">
+            <label class="block mb-4 pad:mb-8">
               <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">手機</span>
               <input
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
                 placeholder="請輸入"
               />
             </label>
-            <label class="block mb-8">
+            <label class="block mb-4 pad:mb-8">
               <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">建言</span>
               <textarea
                 class="caret-primary w-full h-[200px] rounded-lg px-4 py-2.5 text-sm resize-none focus:outline-primary"
