@@ -79,7 +79,7 @@
                 </button>
               </div>
               <img :src="item.imgUrl" alt="" class="absolute z-20" />
-              <img src="/images/img/donate/donate1.png" alt="" class="absolute z-10" />
+              <!-- <img src="/images/img/donate/donate1.png" alt="" class="absolute z-10" /> -->
             </div>
           </div>
         </swiper-slide>
@@ -94,28 +94,34 @@ import { Navigation, A11y } from 'swiper/modules'
 import 'swiper/scss'
 import 'swiper/scss/pagination'
 import DonateContent from '../components/DonateContent.vue'
+import donate1 from '../assets/img/donate/donate1.png'
+import donate2 from '../assets/img/donate/donate2.png'
+import donate3 from '../assets/img/donate/donate3.png'
+import donateImg1 from '../assets/img/donate/donateImg1.png'
+import donateImg2 from '../assets/img/donate/donateImg2.png'
+import donateImg3 from '../assets/img/donate/donateImg3.png'
 
 const data = ref([
   {
     title: '喵星人之友',
     amount: 600,
     people: 9957,
-    imgUrl: '/images/img/donate/donate1.png',
-    subImgUrl: '/images/img/donate/donateImg1.png',
+    imgUrl: donate1,
+    subImgUrl: donateImg1,
   },
   {
     title: '喵星大使',
     amount: 6000,
     people: 2000,
-    imgUrl: '/images/img/donate/donate2.png',
-    subImgUrl: '/images/img/donate/donateImg2.png',
+    imgUrl: donate2,
+    subImgUrl: donateImg2,
   },
   {
     title: '喵星傳奇',
     amount: 60000,
     people: 999,
-    imgUrl: '/images/img/donate/donate3.png',
-    subImgUrl: '/images/img/donate/donateImg3.png',
+    imgUrl: donate3,
+    subImgUrl: donateImg3,
   },
 ])
 const chooseItem = ref({
