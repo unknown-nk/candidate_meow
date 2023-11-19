@@ -5,7 +5,7 @@
       <div class="w-full h-full border-solid border-b-2 border-primary bg-background-color z-40 absolute"></div>
       <!-- logo -->
       <div class="absolute top-[15px] pad:top-5 z-50">
-        <a href="/">
+        <a href="./">
           <img
             src="/images/main-logo.svg"
             alt="logo"
@@ -49,7 +49,7 @@
         <div
           class="w-full absolute z-50 top-40 flex flex-col justify-center items-center font-jost font-bold text-lg text-sub-primary px-8"
         >
-          <div class="mb-[54px]"><a href="" class="hover:text-sub-primary-hover">About Me</a></div>
+          <div class="mb-[54px]"><a href="#about" class="hover:text-sub-primary-hover">About Me</a></div>
           <div class="mb-[54px]"><a href="" class="hover:text-sub-primary-hover">Last Activity</a></div>
           <div class="mb-[54px]"><a href="" class="hover:text-sub-primary-hover">Policy</a></div>
           <div class="mb-[54px]"><a href="" class="hover:text-sub-primary-hover">Donate</a></div>
@@ -82,7 +82,7 @@
       </div>
       <!-- 桌面選單 -->
       <div
-        class="hidden pad:w-[1420px] h-full pad:grid grid-cols-7 items-center justify-items-center font-jost font-bold text-sub-primary z-50"
+        class="hidden pad:w-[1420px] h-full pad:grid grid-cols-7 items-center justify-items-center font-jost font-bold text-sub-primary z-40"
       >
         <div><a href="" class="hover:text-sub-primary-hover">About Me</a></div>
         <div><a href="" class="hover:text-sub-primary-hover">Last Activity</a></div>

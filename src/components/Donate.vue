@@ -1,14 +1,18 @@
 <template>
   <DonateContent v-if="isComponentOpen" :chooseItem="chooseItem" @isComponentOpen="handleIsComponentOpen" />
   <!-- 捐款 -->
-  <div class="h-[80vh] flex flex-col justify-center items-center">
+  <div class="h-[960px] pad:h-[1024px] flex flex-col justify-center items-center">
     <div class="text-center mb-12">
-      <span class="font-jost text-primary text-[30px]">Donate</span>
-      <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em] mb-7">捐款方案</p>
+      <span class="text-[24px] font-jost text-primary pad:text-[30px]">Donate</span>
+      <p
+        class="text-[30px] mobile:text-[50px] pad:text-[80px] text-sub-primary font-extrabold tracking-[.28em] mb-7 -mr-[.28em]"
+      >
+        捐款方案
+      </p>
       <!-- NOTE:千分位套件 -->
       <p>
-        <span class="text-[30px] tracking-[.24em] text-text-color mr-4">累計</span
-        ><span class="text-[50px] text-primary font-extrabold font-jost">100,000,000</span>
+        <span class="text-[24px] pad:text-[30px] tracking-[.24em] text-text-color mr-4">累計</span
+        ><span class="text-[28px] pad:text-[50px] text-primary font-extrabold font-jost">100,000,000</span>
       </p>
     </div>
 
@@ -61,16 +65,22 @@
           <div class="h-full">
             <div class="w-full h-full relative">
               <div
-                class="absolute right-[400px] desktop:right-[250px] bottom-[45px] w-[452px] h-[322px] bg-white rounded-lg z-30 px-[50px] py-[30px] bg-opacity-70"
+                class="absolute right-1/2 translate-x-1/2 pad:translate-x-0 pad:right-[400px] desktop:right-[250px] bottom-[45px] w-[291px] h-[238px] pad:w-[452px] pad:h-[322px] bg-white rounded-lg z-30 px-[24px] pad:px-[50px] py-[24px] pad:py-[30px] shadow-xl pad:shadow-none pad:bg-opacity-70"
               >
-                <p class="text-[40px] text-sub-primary font-extrabold tracking-[.26em] mb-[18px]">{{ item.title }}</p>
+                <p
+                  class="text-[28px] pad:text-[40px] text-sub-primary font-extrabold tracking-[.26em] mb-1 pad:mb-[18px]"
+                >
+                  {{ item.title }}
+                </p>
                 <p class="flex items-center mb-1">
-                  <span class="text-lg tracking-[.24em] mr-4">捐款新台幣</span
-                  ><span class="font-jost text-primary text-[30px] font-bold tracking-[.06em]"
+                  <span class="text-base pad:text-lg pad:tracking-[.24em] mr-2 pad:mr-4">捐款新台幣</span
+                  ><span class="font-jost text-primary text-[24px] pad:text-[30px] font-bold tracking-[.06em]"
                     >NT${{ formatThousandth(item.amount) }}</span
                   >
                 </p>
-                <p class="text-text-color tracking-[.06em] mb-9">已有 {{ formatThousandth(item.people) }} 人贊助</p>
+                <p class="text-sm pad:text-base text-text-color tracking-[.06em] mb-6 pad:mb-9">
+                  已有 {{ formatThousandth(item.people) }} 人贊助
+                </p>
                 <button
                   @click="openComponent(item)"
                   class="w-full h-[60px] bg-primary hover:bg-primary-hover text-white py-2 px-4 rounded tracking-[.24em]"
@@ -78,8 +88,14 @@
                   前往捐款
                 </button>
               </div>
-              <img :src="item.imgUrl" alt="" class="absolute z-20" />
-              <!-- <img src="/images/img/donate/donate1.png" alt="" class="absolute z-10" /> -->
+              <img src="/images/img/donate/mask.png" alt="" class="absolute z-20" />
+              <img :src="item.imgUrl" alt="" class="absolute z-10 hidden pad:block" />
+              <div
+                class="w-[90vw] h-[60%] bg-primary bg-opacity-10 absolute left-1/2 -translate-x-1/2 flex pad:hidden z-10 overflow-hidden justify-center items-center"
+              >
+                <img :src="item.subImgUrl" alt="" class="w-full mobile:hidden" />
+                <img :src="item.imgUrl" alt="" class="h-auto w-full hidden mobile:block pad:hidden" />
+              </div>
             </div>
           </div>
         </swiper-slide>

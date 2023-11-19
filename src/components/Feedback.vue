@@ -5,8 +5,10 @@
       class="w-pad desktop:w-mid max:w-desktop flex flex-col pad:grid grid-cols-2 content-center justify-center items-center mx-8 pad:mx-0"
     >
       <div class="pad:grow text-center pad:text-start">
-        <span class="font-jost text-primary text-[30px]">Feedback</span>
-        <p class="text-[30px] mobile:text-[50px] pad:text-[80px] text-sub-primary font-extrabold tracking-[.28em]">
+        <span class="font-jost text-primary text-[24px] pad:text-[30px]">Feedback</span>
+        <p
+          class="text-[30px] mobile:text-[50px] pad:text-[80px] text-sub-primary font-extrabold tracking-[.28em] -mr-[.28em]"
+        >
           民眾服務信箱
         </p>
         <div class="pad:mt-20 tracking-[.24em] leading-[30px] pad:pr-[170px] my-8 pad:my-0">
@@ -26,7 +28,7 @@
         <div class="flex justify-center my-8 pad:my-20 mx-5 pad:mx-[60px]">
           <form class="w-full">
             <label class="block mb-4 pad:mb-8">
-              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">姓名</span>
+              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1 -mr-[.18em]">姓名</span>
               <input
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
                 placeholder="請輸入"
@@ -36,21 +38,21 @@
               </p> -->
             </label>
             <label class="block mb-4 pad:mb-8">
-              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">Email</span>
+              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1 -mr-[.18em]">Email</span>
               <input
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
                 placeholder="請輸入"
               />
             </label>
             <label class="block mb-4 pad:mb-8">
-              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">手機</span>
+              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1 -mr-[.18em]">手機</span>
               <input
                 class="caret-primary w-full h-[50px] rounded-lg px-4 py-2.5 text-sm focus:outline-primary"
                 placeholder="請輸入"
               />
             </label>
             <label class="block mb-4 pad:mb-8">
-              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1">建言</span>
+              <span class="block text-xs font-medium text-text-color tracking-[.18em] mb-1 -mr-[.18em]">建言</span>
               <textarea
                 class="caret-primary w-full h-[200px] rounded-lg px-4 py-2.5 text-sm resize-none focus:outline-primary"
                 maxlength="300"
@@ -58,7 +60,7 @@
               ></textarea>
             </label>
             <button
-              class="mt-2 w-full h-[60px] bg-primary hover:bg-primary-hover text-white py-2 px-4 rounded tracking-[.24em]"
+              class="mt-2 w-full h-[60px] bg-primary hover:bg-primary-hover text-white py-2 px-4 rounded tracking-[.24em] -mr-[.24em]"
             >
               送出
             </button>

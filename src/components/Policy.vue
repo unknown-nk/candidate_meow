@@ -1,10 +1,10 @@
 <template>
   <!-- 政策議題 -->
-  <div class="h-[80vh] flex justify-center">
+  <div class="h-[1024px] flex justify-center">
     <div class="w-pad desktop:w-mid max:w-desktop flex flex-col items-start justify-center relative">
       <div class="mb-[60px] ">
-        <span class="font-jost text-primary text-[30px]">Policy</span>
-        <p class="text-[80px] text-sub-primary font-extrabold tracking-[.28em]">政策議題</p>
+        <span class="text-[24px] font-jost text-primary pad:text-[30px]">Policy</span>
+        <p class="text-[30px] mobile:text-[50px] pad:text-[80px] text-sub-primary font-extrabold tracking-[.28em] -mr-[.28em]">政策議題</p>
       </div>
       
       <div class="w-full h-[558px] flex relative">
